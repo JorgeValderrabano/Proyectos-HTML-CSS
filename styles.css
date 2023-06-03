@@ -27,5 +27,13 @@ nav a{
     padding-right: 10px;
 }
 nav a:hover{
-    color:yellow;
+    color:gray;
+}
+@media (max-width: 680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
 }
