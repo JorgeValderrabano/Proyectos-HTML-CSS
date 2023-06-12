@@ -1,0 +1,74 @@
+:root {
+    --color1: #f8b78b;
+    --color2: lightsalmon;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--color1);
+    background-image: url(../Images/fondoTop.svg), url(../Images/fondoBotton.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px black;
+    &-header {
+        width: 100%;
+        display: block;
+
+    }
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid var(--color2);
+        &-img {
+            border: 5px solid lightsalmon;
+            border-radius: 50%;
+            background-color: burlywood;
+            box-shadow: 0px -10px 20px lightsalmon;
+            margin-top: calc(-50px - 20px);
+            &-chr {
+                padding: 20px;
+            }
+        }
+        &-title {
+            margin-top: 2rem;
+            font-size: 3rem;
+            span {
+                color: var(--color2);
+            }
+        }
+    }
+    &-footer {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        &-power {
+            text-align: center;
+        }
+        &-resistance {
+            text-align: center;
+        }
+        &-bonus {
+            text-align: center;
+        }
+    }
+}
